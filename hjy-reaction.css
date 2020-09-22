@@ -9,6 +9,7 @@
   width: 98%;
   margin: 0 auto;
   text-align: center;
+  background: brown;
 }
 
 /* .haeder,
@@ -36,6 +37,7 @@
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 2.8% 10%;
 }
 
@@ -105,14 +107,19 @@
   line-height: 400px;
 }
 
-@media (max-width: 375px) {
-  /* .header,
-  .slide {
-    width: 98%;
-  } */
-
+@media (max-width: 500px) {
+  /* 500px이하는 적용 안되는 이유?*/
   .item01,
   .item02 {
-    width: 100%;
+    width: 98%;
+    margin-bottom: 10px;
   }
+
+  .item04 {
+    width: 45%;
+  }
+
+  .content04 .item04:nth-child(2n) {
+    /* margin-right: 9.73%; */
+    margin-right: 0;
 }
