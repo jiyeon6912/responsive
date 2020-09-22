@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.items {
+  /* width: 1000px; */
+  /* width: 100%; */
+  width: 98%;
+  max-width: 1160px;
+  min-width: 320px;
+  /* min-width: 320px; 최소 320px까지 표시하고 그 아래로 브라우저 너비가 작아질때는 아래에 스크롤이 생긴다.*/
+  /* margin: 0 auto; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #ccc;
+  height: 200px;
+  /* width: 490px; */
+  width: 32%;
+
+  /* margin-right: 20px; */
+
+  margin-bottom: 16px;
+}
+
+@media (min-width: 690px) {
+  /*680px이상이 될때*/
+  .item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 980px) {
+  /*980px이상이 될때*/
+  .item {
+    width: 32%; /*아이템이 화면에서 3개가 나와야하므로 width는 100%가 된다.*/
+  }
+}
