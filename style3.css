@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  width: 90%; /*자동으로 마진을 만든다.*/
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-01 li {
+  background: #e1e1e1;
+  width: 560px;
+  height: 300px;
+}
+
+.content-02 li {
+  background: #f0f0f0;
+  width: 360px;
+  height: 220px;
+}
+
+.content li {
+  position: relative;
+}
+
+h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+
+/* // Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+
+/* // Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
+
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */
+
+@media (max-width: 1260px) {
+  .content-01 li {
+    width: 49%;
+  }
+
+  .content-02 li {
+    width: 32%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-02 li {
+    width: 49%;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .content-01 li,
+  .content-02 li {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
